@@ -45,12 +45,12 @@ display: flex;
 position: absolute;
 width: 85%;
 height: auto;
-text-align: right;
 top: 40px;
 }
 
 .menubar ul{
 display: inline-block;
+margin-left: 600px;
 
 }
 
