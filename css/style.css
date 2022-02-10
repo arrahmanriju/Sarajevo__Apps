@@ -1,0 +1,866 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ======================== main css start ===================== */
+
+/* ============== menubar css start ================ */
+
+#menu{
+position: relative;
+z-index: 9;
+}
+
+.logo{
+width: 15%;
+padding-top: 30px;
+}
+
+.logo img{
+width: 100%;
+    
+}
+
+.menu-main{
+display: flex;
+}
+
+.menubar {
+position: absolute;
+width: 85%;
+height: auto;
+text-align: right;
+top: 40px;
+}
+
+.menubar ul{
+display: inline-block;
+
+}
+
+.menubar ul li {
+display: inline-block;
+margin-left: 65px;
+}
+
+.menubar ul li a {
+position: relative;   
+font-family: 'Lato', sans-serif;
+font-size: 15px;
+color: #fff;
+
+} 
+
+.menubar ul li a:hover::before{
+opacity: 1;
+bottom: 50px;
+}
+
+.menubar ul li a::before{
+position: absolute;
+content: '';
+width: 100%;
+height: 2px;
+background: #4c76ff;
+bottom: 0px;
+left: 0;
+opacity: 0;
+transition: all linear 0.4s;
+cursor: pointer;
+} 
+
+/* ================= banner css start =================== */
+
+#banner {
+position: absolute;
+width: 100%;
+height: 100%;
+top: -352px;
+}
+
+.banner-main{
+position: relative;
+top: 0;
+}
+
+
+.banner-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.61);
+}
+
+#ban-conten{
+padding-top: 20px;
+}
+
+.banner-conten {
+position: relative;
+top: 630px;
+z-index: 9;
+color: azure;
+display: flex;
+justify-content: center;
+}
+
+.conten-item{
+text-align: center;
+}
+
+.conten-item h1{
+font-family: 'Open Sans', sans-serif;  
+font-size: 75px;
+color: #fff;
+font-weight: 900;
+}
+
+.conten-item h1 span{
+color: #4c76ff;
+}
+
+.conten-item h2{
+font-family: 'Open Sans', sans-serif;  
+font-size: 65px;
+color: #fff;
+font-weight: 300;
+}
+    
+.conten-item h2 span{
+color: #4c76ff;
+}
+    
+.conten-item h4{
+font-family: 'Open Sans', sans-serif;  
+font-size: 25px;
+color: #fff;
+font-weight: 400;
+padding-top: 20px;
+padding-bottom: 80px;
+}
+    
+.conten-item i {
+font-size: 30px;
+color: gray;
+padding: 0 6px;
+cursor: pointer;
+transition: all linear 0.4s;
+}
+    
+.conten-item i:hover{
+color: #fff;
+}
+
+    
+/* =================== Features css start =============== */
+
+#feature {
+    padding-bottom: 115px;
+    background: #efefef;
+    margin-top: 835px;
+}
+
+.common-head{
+    text-align: center;
+    align-items: center;
+}
+
+.common-head h1 {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #4c76ff;
+    font-weight: 900;
+    padding-top: 75px;
+    text-transform: uppercase;
+}
+
+.common-head h1::before {
+    position: absolute;
+    content: '';
+    width: 140px;
+    height: 2px;
+    background: gray;
+    top: 149px;
+    left: 410px;
+}
+
+.common-head h1::after{
+    position: absolute;
+    content: '';
+    width: 140px;
+    height: 2px;
+    background: gray;
+    top: 149px;
+    right: 405px;
+}
+
+.common-head i {
+    font-size: 25px;
+    color: gray;
+    font-weight: 300; 
+    padding-top: 25px;
+}
+
+.feature-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+.feature-item{
+    width: 366px;
+    display: flex;
+}
+
+.item-icon{
+    width: 20%;
+}
+
+.item-icon i{
+    font-size: 25px;
+    color: #4c76ff;
+    border: solid #4c76ff 2px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.item-tex{
+    width: 75%;
+}
+
+.item-tex h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    color: #062033;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.item-tex p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 300; 
+}
+
+/* =================== accusan timer css start ================ */
+
+#timer{
+    padding-top: 70px;
+    padding-bottom: 130px;
+}
+
+.head-tex p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #062033;
+    font-weight: 500;
+    text-align: center;
+    padding: 0px 108px;
+}
+
+.timer-main{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.timer-box1{
+    width: 380px;
+
+}
+
+.item-box{
+    display: flex;
+    justify-content: space-between;
+    transition: all linear 0.4s;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.item-box:hover{
+    background: #fff7ba;
+    border-radius: 10px;
+}
+
+.timer-icon{
+    width: 10%;
+}
+
+.timer-icon i{
+    font-size: 35px;
+    color: #4c76ff;
+}
+
+.timer-tex{
+    width: 82%;
+}
+
+.timer-tex h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    color: #062033;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.timer-tex p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 300; 
+}
+
+.timer-box2{
+    width: 300px;
+}
+
+.timer-box3{
+    width: 380px;
+}
+
+/* ================ work css start ================== */
+
+.common-head p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    padding: 46px 79px;
+}
+
+#protflio{
+    padding-top: 30px;
+    padding-bottom: 110px;
+}
+
+.button-all{
+    text-align: center;
+}
+
+.button-all button{
+    padding: 5px 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #062033;
+    font-weight: 700;
+    border: none;
+    margin-left: 50px;
+    background: #4c76ff;
+    background: none;
+    border-radius: 5px;
+    transition: all linear 0.6s;
+    cursor: pointer;
+}
+
+.button-all button:hover{
+    background: #4c76ff;
+    color: #fff;
+}
+
+.button-all :first-child{
+    background: #4c76ff;
+    color: #fff;
+}
+
+/* ======================== protflio css start ================ */
+
+.protflio-gallery{
+    padding-top: 75px;
+}
+
+.gallery-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+}
+
+.gallery-item:hover .image-overlay{
+    opacity: 1;
+    height: 100%;
+}
+
+.image-overlay{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: rgba(76, 118, 255, 0.582);
+    text-align: center;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+.overlay-icon i{
+    font-size: 20px;
+    color: #fff;
+    border: solid #fff 2px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 65px;
+    margin-bottom: 10px;
+}
+
+.overlay-tex h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.overlay-tex h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ==================== our team css start ================ */
+
+#team{
+    padding-bottom: 110px;
+}
+
+.team-head p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    padding: 46px 142px;
+}
+
+.team-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.team-item{
+    width: 260px;
+}
+
+.team-item:hover .img-overlay{
+    opacity: 1;
+    height: 100%;
+}
+.team-item:hover .team-item-tex h2{
+    color: #26b899;
+}
+
+.item-img{
+    position: relative;
+}
+
+.item-img img{
+    width: 100%;
+}
+
+.team-item-tex{
+    text-align: center;
+}
+
+.team-item-tex h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color:#062033;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.team-item-tex p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:#062033;
+    font-weight: 500;
+}
+
+.img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: rgba(76, 118, 255, 0.52);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all linear 0.4s;
+    cursor: pointer;
+}
+
+.img-overlay h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:#fff;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.img-overlay p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color:#fff;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.team-overlay-icon{
+    padding-top: 80px;
+    text-align: center;
+}
+
+.team-overlay-icon i{
+    font-size: 27px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: #4c76ff;
+    padding-top: 10px;
+    margin-left: 5px;
+    transition: all linear 0.4s;
+    cursor: pointer;
+
+}
+
+.team-overlay-icon i:hover{
+    background: #fff;
+    color: #4c76ff;
+}
+
+/* ================== counter css start ================= */
+
+#counter{
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 115px;
+    background: url(../images/conter.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#counter::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(6, 32, 51, 0.753);
+}
+
+.counter-head{
+    text-align: center;
+    align-items: center;
+}
+
+.counter-head h1 {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #4c76ff;
+    font-weight: 900;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+
+.counter-head h1::before {
+    position: absolute;
+    content: '';
+    width: 140px;
+    height: 2px;
+    background: #fff;
+    top: 102px;
+    left: 425px;
+}
+
+.counter-head h1::after {
+    position: absolute;
+    content: '';
+    width: 140px;
+    height: 2px;
+    background: #fff;
+    top: 102px;
+    right: 404px;
+}
+
+.counter-head i {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 300; 
+    padding-top: 25px;
+}
+
+.counter-main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.counter-item{
+    width: 220px;
+    text-align: center;
+}
+
+.conter-icon i{
+    font-size: 22px;
+    color: #fff;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.conter-tex h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.conter-tex p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ========================= submit css start ==================== */
+
+.submit-main{
+    padding-top: 40px;
+    padding-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-box{
+    width: 300px;
+}
+
+.left-box h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #062033;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.left-box a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #062033;
+    font-weight: 400;
+    line-height: 27px;
+    
+}
+
+.midlle-box{
+    width: 700px;
+}
+
+.midlle-box h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #062033;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+.midlle-box input {
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-bottom: solid gray 1px;
+    font-size: 20px;
+    color: #062033;
+    padding: 15px 77px 16px 0px;
+    margin-right: 12px;
+}
+
+ .midlle-box span input{
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-bottom: solid gray 1px;
+    font-size: 20px;
+    color: #062033;
+    padding-top: 60px;
+    padding-right: 395px;
+} 
+
+.right-box{
+    width: 70px;
+}
+
+.right-box i{
+    font-size: 34px;
+    padding-top: 10px;
+    color: gray;
+    transition: all linear 0.4s;
+    cursor: pointer;
+}
+
+.right-box i:hover{
+    color: #4c76ff;
+}
+
+.mass{
+    display: flex;
+    padding-top: 20px;
+    justify-content: right;
+    padding-right: 100px;
+}
+
+.mass i{
+    font-size: 25px;
+    color: #4c76ff;
+    padding-left: 20px;
+    cursor: pointer;
+    
+}
+
+.mass p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+    color: #062033;
+}
+
+/* ================== footer css start ==================== */
+
+#footer{
+    background: #010305;
+}
+
+.footer-main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left{
+    width: 360px;
+}
+
+.footer-left h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: #dddddd;
+    font-weight: 700;
+}
+
+.footer-left h2 span{
+    font-size: 50px;
+    color: #4c76ff;
+}
+
+.footer-left a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #dddddd;
+}
+
+.footer-midlle{
+    width: 360px;
+}
+
+.footer-midlle h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    color: #dddddd;
+    font-weight: 700;
+}
+
+.footer-midlle i {
+    font-size: 30px;
+    color: #dddddd;
+    font-weight: 600;
+    border: solid #dddddd 2px;
+    padding: 11px 28px 11px 10px;
+    display: flex;
+    justify-content: right;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.footer-midlle p{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: #dddddd;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 11px 33px 0px 0px;
+    margin-top: 15px;
+}
+
+.footer-right{
+    width: 360px;
+}
+
+.footer-right h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    color: #dddddd;
+    font-weight: 700;
+}
+
+.last-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.one{
+    width: 45%;
+}
+
+.one a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #dddddd;
+}
+
+.two{
+    width: 45%;
+}
+
+.two a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #dddddd;
+}
+
+/* ========================= end ================================ */
